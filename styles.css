@@ -1,19 +1,18 @@
 body {
     background-color: black;
     color: black;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
     background-color: rgb(251, 255, 0);
-    display: flex;
-    justify-content: space-around;
+    position: fixed;
     height: 100%;
+    padding: 10px;
 }
-
-aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav ul li {
+    list-style: none;
 }
 
 .container {
@@ -28,6 +27,7 @@ aside {
 background-color: deeppink;
 border-radius: 5%;
 padding: 1em;
+margin-left: 10vw
 }
 
 .column-2 {
