@@ -7,25 +7,37 @@ nav {
     background-color: rgb(251, 255, 0);
     display: flex;
     justify-content: space-around;
+    height: 100%;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: .25em;
+    row-gap: 1em;
 }
 
 .column-1 {
 background-color: deeppink;
 border-radius: 5%;
+padding: 1em;
 }
 
 .column-2 {
 background-color: green;
 border-radius: 5%;
+padding: 1em;
 }
 
 .column-3 {
 background-color: aquamarine;
 border-radius: 5%;
+padding: 1em;
 }
