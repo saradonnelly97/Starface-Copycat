@@ -51,12 +51,24 @@ padding: 1em;
 }
 
 .cardGreenGoblin {
-    background-color: rgb(38, 182, 38);
+    background-color: rgb(17, 184, 17);
     border-radius: 2.4rem;
-    padding: 20px;
-    margin-bottom: 4px;
+    padding: 1px;
     font-family: 'Noto Sans', sans-serif;
     font-size: 34px;
+    }
+
+.cardGreenGoblin ul {
+    margin-left: 25px;
+    padding-left: 0;
+}
+
+.cardGreenGoblin li {
+    list-style-image: url('assets/img75x75.png');
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 17%;
 }
 
 .cardSalmon {
@@ -75,9 +87,11 @@ padding: 1em;
 
 
 hr {
+    border: 0;
+    width: 100%;               
+    background-color:#000;
     height: 1px;
-    background-color: #000;
-    border: none;
+    margin: 0;
 }
 
 
