@@ -108,6 +108,10 @@ overflow: hidden;
     padding-left: 10px;
     margin-left: 17%;
 }
+
+.cardGreenGoblin li:hover {
+    opacity: 0.3;
+}
 .cardSalmon {
     background-image: linear-gradient(rgb(255, 169, 218), rgb(151, 78, 78));
     border-radius: 2.4rem;
