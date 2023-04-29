@@ -15,34 +15,50 @@
 </head>
 <body>
         <nav>
-          <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-          </ul>
+         <img src="assets/NavHold.png">
         </nav>
     
     <div class="grid-container">
      <div class="column-1">
         <div class="cardDeepPink">
             <p>
-            Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-            </p>
-            <p>
-            Pucca is also the best friend of Ching.
-            </p>
+                <center>
+                <body onload="startTime()">
+
+                    <h2>Next Drop At:</h2>
+                    
+                    <div id="txt"></div>
+                    
+                    <script>
+                    function startTime() {
+                      const today = new Date();
+                      let h = today.getHours();
+                      let m = today.getMinutes();
+                      let s = today.getSeconds();
+                      m = checkTime(m);
+                      s = checkTime(s);
+                      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                      setTimeout(startTime, 1000);
+                    }
+                    
+                    function checkTime(i) {
+                      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                      return i;
+                    }
+                    </script>
+            </center>
         </div>
         <div class="cardGreenGoblin">
         <ul>
-        <li>RIBBIT</li>
+        <li>YAKULT</li>
         <hr>
-        <li>RIBBIT</li>
+        <li>KONA COFFEE</li>
         <hr>
-        <li>RIBBIT</li>
+        <li>CALPICO</li>
         <hr>
-        <li>RIBBIT</li>
+        <li>GRASS JELLY</li>
         <hr>
-        <li>RIBBIT</li>
+        <li>VEGETABLE POPIPO</li>
         </ul>
         </div>
         <div class="cardSalmon">
@@ -86,89 +102,27 @@
         </div>
      </div>
      <div class="column-2"> 
-        <div class="cardSalmon">
-            <p>
-                Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-                </p>
+        <div class="cardSalmon"> 
+            <div class="fruitSnacks">
+                <h2>FRUIT SNACKS</h2>
                 <p>
-                Pucca is also the best friend of Ching.
+                    <b>Don't they look happy to see you!</b>
                 </p>
-                <p>
-                Pucca is a talented musician, as shown in And the Band Played Rong, Sooga Size Me and other episodes. Out of a desire to protect him, Pucca often intervenes in conflicts when Garu (unwillingly) gives up on such.
-                </p>
-        
-                <p>
-                Pucca has an alter-ego named "Noodle Girl" that sometimes appears in the series.
-                </p>
-        
-                <p>
-                Although Pucca is a good combatant, she can be oblivious at times, causing her to learn what is happening the hard way.
-                </p>
-                <p>
-                    Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-                    </p>
-                    <p>
-                    Pucca is also the best friend of Ching.
-                    </p>
-                    <p>
-                    Pucca is a talented musician, as shown in And the Band Played Rong, Sooga Size Me and other episodes. Out of a desire to protect him, Pucca often intervenes in conflicts when Garu (unwillingly) gives up on such.
-                    </p>
-            
-                    <p>
-                    Pucca has an alter-ego named "Noodle Girl" that sometimes appears in the series.
-                    </p>
-            
-                    <p>
-                    Although Pucca is a good combatant, she can be oblivious at times, causing her to learn what is happening the hard way.
-                    </p>
-                    <p>
-                        Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-                        </p>
+            </div>
+           <img id="FruitSnacks" src="assets/FruitSnacksHolder.png" alt="A picture of smiling fruits.">
+
         </div>
         
     </div>
      <div class="column-3"> 
             <div class="cardAquaMan">
-                <section>
-                <p>
-                Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-                </p>
-                <p>
-                Pucca is also the best friend of Ching.
-                </p>
-                <p>
-                Pucca is a talented musician, as shown in And the Band Played Rong, Sooga Size Me and other episodes. Out of a desire to protect him, Pucca often intervenes in conflicts when Garu (unwillingly) gives up on such.
-                </p>
-        
-                <p>
-                Pucca has an alter-ego named "Noodle Girl" that sometimes appears in the series.
-                </p>
-        
-                <p>
-                Although Pucca is a good combatant, she can be oblivious at times, causing her to learn what is happening the hard way.
-                </p>
-                <p>
-                    Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-                    </p>
+                <div class="cloudyCloud">
+                    <h2>MINI-CLOUD</h2>
                     <p>
-                    Pucca is also the best friend of Ching.
+                        <b>They're just so soft!</b>
                     </p>
-                    <p>
-                    Pucca is a talented musician, as shown in And the Band Played Rong, Sooga Size Me and other episodes. Out of a desire to protect him, Pucca often intervenes in conflicts when Garu (unwillingly) gives up on such.
-                    </p>
-            
-                    <p>
-                    Pucca has an alter-ego named "Noodle Girl" that sometimes appears in the series.
-                    </p>
-            
-                    <p>
-                    Although Pucca is a good combatant, she can be oblivious at times, causing her to learn what is happening the hard way.
-                    </p>
-                    <p>
-                        Pucca lives with her three uncles at the Goh-Rong Restaurant, where she works as a delivery girl. She drives around on her red scooter making deliveries to the people of the town. She usually delivers JaJang Noodles. Pucca also has a pink cat named Yani.
-                        </p>
-                    
-                </section>
+                </div>
+              <img id="CloudyCloud" src="assets/CloudyCloud.png" alt="A picture of a couple of smiling clouds.">
             </div>
         </div>  
     </div>
